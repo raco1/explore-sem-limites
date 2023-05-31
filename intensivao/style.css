@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish";
+}
+:root{
+    font-size: 62.5%;
+    --fs-rem: 1.6rem;
+    --fc-pink:hsla(320, 69%, 42%, 1);
+    --fc-darkblue: hsla(244, 38%, 28%, 1);
+    --bg-darkblue:hsla(242, 50%, 38%, 1);
+    --bg-white:hsla(283, 47%, 97%, 1);
+}
+body::before{
+    content: '';
+    display: block;
+    width: 36.4rem;
+    height: 37rem;
+    margin: 0 3.2rem 1.7rem;
+    background: url(/intensivao/image\ 11969.png);
+    background-size: cover;
+}
+body{
+    font-size: var(--fs-rem);
+}
+.page{
+    min-width: 42rem;
+}
+header{ /* alinhamento dos elementos no header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{ /*estilização do título do cabeçalho */
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: var(--fc-pink);
+
+    margin-bottom: .5rem;
+}
+header p{ /*estilização do paragrafo no cabeçalho */
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--fc-darkblue);
+
+    margin-bottom: 3.5rem;
+}
+header .arrow{ /* estilização da seta do cabeçalho */
+    width: 5.8rem;
+    height: 10.5rem;
+    border: .4rem solid var(--fc-pink);
+    border-radius: 76rem;
+
+    background: url(/intensivao/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 0 auto 9.3rem;
+}
+header .img{
+    display: none;
+}
+.cards{ /* estilização e alinhamento da div dos cards */
+    background: var(--bg-darkblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5.2rem 3.9rem;
+    gap: 4.9rem;
+}
+.card{ /*estilização dos cards*/
+    background: var(--bg-white);
+    box-shadow: 0 .3rem 1.3rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.9rem;
+
+    width: 35.2rem;
+    height: fit-content;
+    padding: 2.6rem;
+}
+.card img{
+    margin-bottom: 2.3rem;
+}
+.card h2{
+    font-weight: 900;
+    font-size: 2.9rem;
+    line-height: 3.7rem;
+    color: var(--fc-pink);
+
+    margin-bottom: 1rem;
+}
+.card p{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--fc-darkblue);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+
+    padding: 7.8rem 4rem 6.5rem;
+}
+.contact h2{
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: var(--fc-pink);
+
+    margin-bottom: 4.3rem;
+}
+.input-text input, .input-email input{
+    width: 34.8rem;
+    height: 4.8rem;
+
+    border: .15rem solid var(--bg-darkblue);
+    border-radius: 1.6rem;
+
+    padding: 1.2rem 4rem;
+
+    margin-bottom: 1.2rem;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 100%;
+    color: var(--fc-darkblue);
+}
+.input-text input{
+    background: url(/intensivao/Vector\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: left 5% top 50%;
+}
+.input-email input{
+    background: url(/intensivao/Vector\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-position: left 5% top 50%;
+}
+.contact textarea{
+    width: 34.8rem;
+    height: 12.6rem;
+
+    padding: 1.2rem 1.6rem 1.6rem;
+    margin-bottom: 2.4rem;
+
+    border: 1.5px solid var(--bg-darkblue);
+    border-radius: 1.6rem;
+
+    font-weight: 600;
+    font-size: 1.6;
+    line-height: 140%;
+    color: var(--fc-darkblue);
+}
+.contact button{
+    width: 15.1rem;
+    height: 4.5rem;
+
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    border-radius: 1.6rem;
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--bg-white);
+}
+footer{
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    
+    padding: 1.6rem;
+
+    height: 7.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    color: var(--bg-white);
+}
+@media (min-width: 768px) {
+    body::before{
+        content: '';
+        display: none;
+    }
+    .page{
+        min-width: 144rem;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem 1.3rem 10.9rem;
+    }
+    header .img{
+        display: flex;
+        margin: 0 2.8rem 10rem 0;
+    }
+    header .img img{
+        width: 71.9rem;
+        height: 73.2rem;
+
+    }
+    header h1{
+        font-weight: 900;
+        font-size: 5.8rem;
+        line-height: 7.3rem;
+        color: var(--fc-pink);
+    }
+    header p{
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        color: var(--fc-darkblue);
+
+        margin-bottom: 17.9rem;
+    }
+    header .arrow{
+        margin: 0;
+        animation-name: levitating;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        min-width: 76.8rem;
+    }
+    .card{
+        height: 43rem;
+    }
+    .card h2{
+        font-weight: 900;
+        font-size: 3.5rem;
+        line-height: 4.4rem;
+    }
+    .card p{
+        font-weight: 600;
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+    }
+    .input-text input, 
+    .input-email input,
+    .contact textarea{
+        width: 59.2rem;
+    }
+    .input-text input, 
+    .input-email input{
+        padding: 1.2rem 6rem;;
+    }
+    .contact{
+        background: url(/intensivao/image\ 11976.svg);
+        background-repeat: no-repeat;
+        background-position: right 0;
+    }
+}
+@keyframes levitating {
+    0%{
+        transform: translateY(-10rem);
+    }
+    50%{
+        transform: translateY(10rem);
+    }
+    100%{
+        transform: translateY(-10rem);
+    }
+}
